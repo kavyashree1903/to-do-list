@@ -11,14 +11,6 @@ for (i=0;i<nodelist.length;i++){
 var close = document.getElementsByClassName("close");
 var i;
 
-var textInput = document.getElementById("myInput");
-textInput.addEventListener("keyup",function(event){
-    if(event.keyCode ===13){
-        event.preventDefault();
-        document.getElementById("myBtn").click;
-
-    }
-});
 
 for (i = 0; i < close.length; i++) {
   close[i].onclick = function() {
@@ -27,12 +19,12 @@ for (i = 0; i < close.length; i++) {
   }
 }
 
-// var list = document.querySelector('ul');
-// list.addEventListener('click', function(ev) {
-//   if (ev.target.tagName === 'LI') {
-//     ev.target.classList.toggle('checked');
-//   }
-// }, false);
+var list = document.querySelector('ul');
+list.addEventListener('click', function(ev) {
+  if (ev.target.tagName === 'LI') {
+    ev.target.classList.toggle('checked');
+  }
+}, false);
 
 
 function newElement() {
